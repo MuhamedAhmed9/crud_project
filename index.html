@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="py-4 w-75 mx-auto" action="">
+      <h1 class="mb-3">Products Managment System</h1>
+      <div class="form-group mb-4">
+        <label for="productNameInput">Product Name:</label>
+        <input class="form-control mt-2" type="text" id="productNameInput" />
+      </div>
+      <div class="form-group mb-4">
+        <label for="productPriceInput">Product Price:</label>
+        <input class="form-control mt-2" type="text" id="productPriceInput" />
+      </div>
+      <div class="form-group mb-4">
+        <label for="productCategoryInput">Product Category:</label>
+        <input
+          class="form-control mt-2"
+          type="text"
+          id="productCategoryInput"
+        />
+      </div>
+      <div class="form-group mb-4">
+        <label for="productDescInput">Product Description:</label>
+        <input class="form-control mt-2" type="text" id="productDescInput" />
+      </div>
+      <button id="addBtn" class="btn btn-md btn-primary">Add Product</button>
+      <button id="updateBtn" class="btn btn-md btn-warning">
+        Update Product
+      </button>
+      <div class="form-group mt-4 mb-2">
+        <label for="productSearchInput">Search Product:</label>
+        <input class="form-control mt-2" type="text" id="productSearchInput" />
+      </div>
+    </form>
+    <table class="table w-75 mx-auto">
+      <thead class="text-left">
+        <td class="fw-bolder fs-5 text-muted">index</td>
+        <td class="fw-bolder fs-5 text-muted">ProductName</td>
+        <td class="fw-bolder fs-5 text-muted">ProductPrice</td>
+        <td class="fw-bolder fs-5 text-muted">ProductCategory</td>
+        <td class="fw-bolder fs-5 text-muted">ProductDesc</td>
+        <td class="fw-bolder fs-5 text-muted">update</td>
+        <td class="fw-bolder fs-5 text-muted">delete</td>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
